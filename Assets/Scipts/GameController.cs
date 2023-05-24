@@ -84,9 +84,11 @@ public class GameController : MonoBehaviour
             timeLeft -= Time.deltaTime;
             UpdateTimer(timeLeft);
         }
+
         if(timeLeft<=0)
         {
             isGameComplete = true;
+            ShowPopup(false);
         }
     }
 
